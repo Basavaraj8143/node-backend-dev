@@ -1,4 +1,4 @@
-# 📘 Day 1 – Node.js File System (fs/promises)
+# 📘 Day 1 - Node.js File System (fs/promises)
 
 ## ✅ What I Learned
 
