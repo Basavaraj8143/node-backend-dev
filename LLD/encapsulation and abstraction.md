@@ -205,26 +205,25 @@ The compiler handles translation behind the scenes.
 
 # 5. Code-Based Abstraction: Abstract Classes & Interfaces
 
-## Abstract Class Example (C++)
+## Abstract Class Example (Java)
 
-```cpp
+```java
 // Abstract interface for any Car type
-class Car {
-public:
-    // Pure virtual methods - no implementation here
-    virtual void startEngine() = 0;
-    virtual void shiftGear(int newGear) = 0;
-    virtual void accelerate() = 0;
-    virtual void brake() = 0;
-    virtual ~Car() {}
-};
+abstract class Car {
+
+    // Abstract methods - no implementation here
+    public abstract void startEngine();
+    public abstract void shiftGear(int newGear);
+    public abstract void accelerate();
+    public abstract void brake();
+}
 ```
 
 ### Key Points
 
 - `Car` declares **what** operations must exist but hides **how** they work
 - No implementation lives in the abstract class — only signatures
-- Clients use `Car*` pointers without needing concrete details
+- Clients use `Car` references without needing concrete details
 
 ---
 
@@ -232,25 +231,37 @@ public:
 
 Each subclass provides its own implementation:
 
-```cpp
-class ElectricCar : public Car {
-public:
-    void startEngine() override {
-        // Electric motor startup logic
+```java
+class ElectricCar extends Car {
+
+    @Override
+    public void startEngine() {
+        System.out.println("Electric motor starting...");
     }
-    void shiftGear(int newGear) override {
-        // Single-speed transmission logic
+
+    @Override
+    public void shiftGear(int newGear) {
+        System.out.println("Single-speed transmission — gear: " + newGear);
     }
-    void accelerate() override {
-        // Instant torque delivery
+
+    @Override
+    public void accelerate() {
+        System.out.println("Instant torque delivery");
     }
-    void brake() override {
-        // Regenerative braking logic
+
+    @Override
+    public void brake() {
+        System.out.println("Regenerative braking engaged");
     }
-};
+}
 ```
 
-Client code uses `Car*` and works with **any** subclass — `SportsCar`, `SUV`, `ElectricCar` — without modification.
+Client code uses `Car` references and works with **any** subclass — `SportsCar`, `SUV`, `ElectricCar` — without modification.
+
+```java
+Car myCar = new ElectricCar();
+myCar.startEngine();   // works via abstraction
+```
 
 ---
 
@@ -358,22 +369,21 @@ You can view the mileage but cannot tamper with it via the dashboard interface.
 
 ## Example
 
-```cpp
+```java
 class BankAccount {
-private:
-    double balance;   // hidden from outside
 
-public:
-    void deposit(double amount) {
+    private double balance;   // hidden from outside
+
+    public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
         }
     }
 
-    double getBalance() {
+    public double getBalance() {
         return balance;
     }
-};
+}
 ```
 
 `balance` cannot be directly accessed or modified from outside.
@@ -386,22 +396,21 @@ All interaction goes through controlled public methods.
 
 Purpose: Allow controlled mutation with checks, rather than exposing fields blindly.
 
-```cpp
+```java
 class Car {
-private:
-    int speed;
 
-public:
-    void setSpeed(int newSpeed) {
+    private int speed;
+
+    public void setSpeed(int newSpeed) {
         if (newSpeed >= 0 && newSpeed <= 200) {
-            speed = newSpeed;
+            this.speed = newSpeed;
         }
     }
 
-    int getSpeed() {
+    public int getSpeed() {
         return speed;
     }
-};
+}
 ```
 
 Invalid values are rejected before they corrupt internal state.
@@ -475,14 +484,14 @@ Encapsulation →  hide WHAT (internal data)
 
 ## Q4
 
-What is a pure virtual function in C++?
+What is an abstract method in Java?
 
 **Answer:**
 
-A function declared with `= 0` in an abstract class. It has no implementation in the base class and must be overridden by concrete subclasses.
+A method declared with the `abstract` keyword in an abstract class. It has no body and must be overridden by concrete subclasses.
 
-```cpp
-virtual void startEngine() = 0;
+```java
+public abstract void startEngine();
 ```
 
 ---
