@@ -1,4 +1,4 @@
-# 🔵 PHASE 1 — FOUNDATION (Weeks 1–6)
+# 🔵 PHASE 1 FOUNDATION (Weeks 1–6)
 
 ## 🎯 Goal
 
