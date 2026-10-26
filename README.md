@@ -1,45 +1,49 @@
-# Backend Roadmap
+# Node Backend Development
 
-A structured 40-week self-paced backend engineering roadmap — from JavaScript fundamentals to production-grade systems.
+A collection of backend engineering study materials, notes, and code examples across multiple languages and approaches.
+
+## 📁 Project Structure
+
+```
+node-backend-dev/
+├── backend-with-first-principle/   # Core backend concepts from first principles
+├── backend-with-java/              # Java & Spring ecosystem notes
+├── backend-with-js/                # Node.js / JavaScript backend learning path
+├── backend-work-anynonimus/        # Miscellaneous backend topics & setup guides
+└── LLD/                            # Low-Level Design: SOLID, patterns, UML
+```
+
+### `backend-with-first-principle/`
+Foundational backend concepts — protocols, architecture, data handling, and system design — organized as sequential markdown notes.
+
+### `backend-with-java/`
+Java-focused backend development with Spring MVC, covering framework internals and patterns.
+
+### `backend-with-js/`
+Node.js backend learning path structured in phases:
+- **Phase 1–5**: Progressive backend topics
+- **week1-js-basics/**: Daily JavaScript exercises (file I/O, APIs, logging, parsing)
+
+### `backend-work-anynonimus/`
+Standalone guides on specific topics:
+- Reverse engineering workflows
+- WSL setup for development
+
+### `LLD/`
+Low-Level Design references:
+- SOLID principles (Part 1 & 2)
+- Factory & Strategy patterns
+- Encapsulation & Abstraction
+- UML diagrams for design
+
+## 🛠️ Tech Stack Covered
+
+`Java` · `Spring Boot` · `Spring MVC` · `Node.js` · `JavaScript` · `Redis` · `PostgreSQL` · `Elasticsearch` · `RabbitMQ` · `JWT` · `REST` · `WSL`
+
+## 📌 Purpose
+
+Personal reference for backend engineering - spanning fundamentals, language-specific implementations, and design principles. Content is continuously updated.
 
 ---
 
-## Phases
-
-| Phase | Focus | Weeks |
-|-------|-------|-------|
-| [Phase 1](./phase1.md) | Foundation — JS, HTTP, PostgreSQL, Git | 1–6 |
-| [Phase 2](./phase2.md) | Core Backend — Express, Auth, Redis, Async | 7–14 |
-| [Phase 3](./phase3.md) | Production — Docker, Deployment, Logging, Security | 15–22 |
-| [Phase 4](./phase4.md) | Advanced Systems — Scale, DB, Queues, Microservices | 23–32 |
-| [Phase 5](./phase5.md) | Differentiation — Open Source, Writing, Specialization | 33–40 |
-
----
-
-## Stack
-
-- **Runtime** → Node.js
-- **Framework** → Express.js
-- **Database** → PostgreSQL
-- **Cache** → Redis
-- **Containers** → Docker
-- **Cloud** → AWS
-
----
-
-## Rules
-
-- Build while learning — no passive watching
-- Push code daily
-- Understand WHY, not just HOW
-- One solid project per phase
-
----
-
-## Daily Routine
-
-| Block | Task |
-|-------|------|
-| 2–3 hrs | Backend |
-| 2 hrs | DSA |
-| 1 hr | Aptitude |
+*Maintained by [Basavaraj Ningasani](https://github.com/basavaraj8143)*
