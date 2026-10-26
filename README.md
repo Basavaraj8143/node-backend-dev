@@ -2,7 +2,6 @@
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-yes-blue?style=flat-square)
-![Stars](https://img.shields.io/github/stars/basavaraj8143/node-backend-dev?style=flat-square)
 
 Personal backend engineering notes and code examples, organized as a learning path from fundamentals to design and system architecture, in Node.js and Java.
 
