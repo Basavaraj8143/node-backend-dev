@@ -1,7 +1,7 @@
 # Backend Dev
 
-![Backend Development](https://img.shields.io/badge/Backend-Development-blue?style=for-the-badge&logo=node.js)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
+![Maintained](https://img.shields.io/badge/Maintained-yes-blue?style=flat-square)
 
 
 Personal backend engineering notes and code examples, organized as a learning path from fundamentals to design and system architecture, in Node.js and Java.
