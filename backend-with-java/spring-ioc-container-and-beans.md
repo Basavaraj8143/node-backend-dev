@@ -255,6 +255,9 @@ Application ready
 `ApplicationContext` extends `BeanFactory` — it is the standard choice.
 
 ---
+This is special class annotation stores the metadata about class:
+<img width="578" height="447" alt="image" src="https://github.com/user-attachments/assets/5e861f70-0391-4be3-ad8d-cd82b1210ede" />
+
 
 # 9. Interview Questions
 
