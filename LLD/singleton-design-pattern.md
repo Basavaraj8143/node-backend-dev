@@ -244,6 +244,10 @@ In Spring, prefer **singleton-scoped beans** + dependency injection instead of h
 
 ---
 
+# Stack Memory: This is where all non-primitive data types (like standard variables: int, char, bool) are stored. It is used to manage method calls and local variables.
+# Heap Memory: This is where dynamically created objects (such as instances of custom classes created using the new keyword) are stored.
+When you declare an object (e.g., A* a = new A();), the pointer to that object is stored in the Stack, while the actual object instance itself is allocated in the Heap.
+
 # 7. Interview Questions
 
 ## Q1
