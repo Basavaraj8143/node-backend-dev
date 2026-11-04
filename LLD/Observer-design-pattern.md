@@ -232,6 +232,8 @@ Note: Java's built-in `java.util.Observable` is deprecated since Java 9. Prefer 
 - **Spring events** (`ApplicationEventPublisher` + `@EventListener`)
 
 ---
+<img width="1090" height="371" alt="image" src="https://github.com/user-attachments/assets/2b0c331d-a872-49b2-9ae1-9cc21708c1f5" />
+
 
 # 7. Interview Questions
 
