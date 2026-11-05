@@ -58,6 +58,7 @@ Unmanageable, and every combination is fixed at compile time.
 # 3. The Decorator Solution
 
 Create one small decorator per feature and **stack them** at runtime.
+<img width="1275" height="408" alt="image" src="https://github.com/user-attachments/assets/317ad243-1f81-4310-a010-7226cf9c6359" />
 
 ```text
 StarPower( GunPower( HeightUp( Mario ) ) )
@@ -293,6 +294,7 @@ Validator v = new SQLInjectionDecorator(
 
 v.validate("john@gmail.com");   // true
 ```
+<img width="1265" height="1025" alt="image" src="https://github.com/user-attachments/assets/4e53a514-9ef4-4f11-a4a2-80cff8783680" />
 
 ---
 
