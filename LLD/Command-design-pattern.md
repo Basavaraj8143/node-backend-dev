@@ -127,6 +127,7 @@ remote.pressButton(1);   // No command assigned
 - **Task queues and logging:** commands can be stored, queued, or logged.
 
 ---
+<img width="986" height="432" alt="image" src="https://github.com/user-attachments/assets/266ccdd2-5d80-4057-9d70-14b4d8c86f89" />
 
 # 5. Interview Questions
 
